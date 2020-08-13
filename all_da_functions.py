@@ -20,7 +20,7 @@ clickertime = 0  # time to run the autoclicker for (in secconds)                
 mbholddown_rmb = 0 #if the right mouse button button is pressed, this whill be set to 1                    ¦
 mbholddown_lmb = 0 #if the left mouse button button is pressed, this whill be set to 1                     ¦
 #                                                                                                          ¦
-mbholddown_time = 0 #the time that the mouse button whill be held down for                                 ¦
+mbholddown_time = 0 #the time that the mouse button whill be held down for (in secconds)                   ¦
 #text spammer veriables -----------------------------------------------------------------------------------
 text_to_spam = "" #the text to spam                                                                        ¦
 #                                                                                                          ¦
@@ -52,10 +52,21 @@ def clickerstart():  #this functions activates when you press the "start" button
                 print("click")
                 time.sleep(int(delay)) #sleeping for the before worked out time
                 mouse.release(Button.right) #...and releasing it
-#mouse button functions -----------------------------------------------------------------------------------
-def mbholddown_start(): #when you press start on the MB hold down program, this run's                      ¦
-    print("you started the mouse button holder downer!")#                                                  ¦
+#mouse button functions ---------------------------------------------------------------------------------------
+def mbholddown_start(): #when you press start on the MB hold down program, this run's                          ¦
+#                                                                                                              ¦ 
+    if mbholddown_rmb == 1: #if you click the rmb hold down button on the mb holddown page this whill activcate¦
+        mouse.press(Button.right) #press RMB...                                                                ¦
+        time.sleep(mbholddown_time) #sleep for the time specified in the GUI                                   ¦
+        mouse.release(Button.right) #...and release it                                                         ¦
+#                                                                                                              ¦
+    if mbholddown_lmb == 1: #if you click the lmb hold down button on the mb holddown page this whill activcate¦
+        mouse.press(Button.left) #press RMB...                                                                 ¦
+        time.sleep(mbholddown_time) #sleep for the time specified in the GUI                                   ¦
+        mouse.release(Button.left) #...and release it                                                          ¦
 #text spammer functions------------------------------------------------------------------------------------
 def text_spam_start(): #this function whill run when you click start on the text spamer                    ¦
-    print("you started the text spammer!") #                                                               ¦
+    for i in range(0, ammount_to_spam): #loop for the ammount of stuff to spam                             ¦
+        keyboard.type(text_to_spam) #typing the spam text                                                  ¦
+#                                                                                                          ¦
 #----------------------------------------------------------------------------------------------------------
