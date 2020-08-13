@@ -10,12 +10,12 @@ keyboard = keycon()
 mouse = mousecon()
 
 #clicker veriables ----------------------------------------------------------------------------------------
-clickerlmb = 0 #this is set to 1 or 0 when the left mouse button is pressed (or not) in the clicker window   ¦
-clickermb = 0 #this is set to 1 or 0 when the right mouse button is pressed (or not) in the clicker window  ¦
+clickerlmb = 0 #this is set to 1 or 0 when the left mouse button is pressed (or not) in the clicker window ¦
+clickermb = 0 #this is set to 1 or 0 when the right mouse button is pressed (or not) in the clicker window ¦
 #                                                                                                          ¦
 CPS = 0  #clicks per seccond on the autoclicker                                                            ¦
 #                                                                                                          ¦
-clickertime = 0  # time to run the autoclicker for (in secconds)                                                  ¦
+clickertime = 0  # time to run the autoclicker for (in secconds)                                           ¦
 #mouse button hold down veriables--------------------------------------------------------------------------
 mbholddown_rmb = 0 #if the right mouse button button is pressed, this whill be set to 1                    ¦
 mbholddown_lmb = 0 #if the left mouse button button is pressed, this whill be set to 1                     ¦
