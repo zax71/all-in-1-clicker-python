@@ -39,6 +39,6 @@ def clickerstart():  #this functions activates when you press the "start" button
 def mbholddown_start(): #when you press start on the MB hold down program, this run's                      ¦
     print("you started the mouse button holder downer!")#                                                  ¦
 #text spammer functions------------------------------------------------------------------------------------
-
-
-
+def text_spam_start(): #this function whill run when you click start on the text spamer                    ¦
+    print("you started the text spammer!") #                                                               ¦
+#----------------------------------------------------------------------------------------------------------
