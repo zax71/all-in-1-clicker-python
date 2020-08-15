@@ -1,13 +1,13 @@
-from pynput.keyboard import Controller as keycon
+from pynput.keyboard import Controller as keycon #importing pynput - the thing that presses the buttons
 from pynput.keyboard import Key
 
 from pynput.mouse import Button
-from pynput.mouse import Controller as mousecon
+from pynput.mouse import Controller as mousecon #you finnished importing pynput, yay! that was on ly 4 whole lines!
 
-import time
+import time #importing time, do i realy need to say that?
 
-keyboard = keycon()
-mouse = mousecon()
+keyboard = keycon()  #more pynput junk
+mouse = mousecon()   #another bit of this modules junk (pynput)
 
 #clicker veriables ----------------------------------------------------------------------------------------
 clickerlmb = 0 #this is set to 1 or 0 when the left mouse button is pressed (or not) in the clicker window ¦
