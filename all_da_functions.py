@@ -25,6 +25,7 @@ mbholddown_time = 0 #the time that the mouse button whill be held down for (in s
 text_to_spam = "" #the text to spam                                                                        ¦
 #                                                                                                          ¦
 ammount_to_spam = 0 #the ammount of time to spam "text_to_spam" veriable                                   ¦
+spam_delay = 0 #the delay between text while spaming (in secconds)                                         ¦
 #clicker functions---------------------------------------------------------------------------------------------
 def clickerstart():  #this functions activates when you press the "start" button in the autocklicker menu      ¦
 #                                                                                                              ¦
@@ -68,5 +69,5 @@ def mbholddown_start(): #when you press start on the MB hold down program, this 
 def text_spam_start(): #this function whill run when you click start on the text spamer                    ¦
     for i in range(0, ammount_to_spam): #loop for the ammount of stuff to spam                             ¦
         keyboard.type(text_to_spam) #typing the spam text                                                  ¦
-#                                                                                                          ¦
+        time.sleep(spam_delay)#sleeping for the spam delay                                                 ¦
 #----------------------------------------------------------------------------------------------------------
